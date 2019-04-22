@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./plugins/element.js";
+import "./assets/css/reset.css";
+import "./assets/css/reset-el.scss";
 
 Vue.config.productionTip = false;
 

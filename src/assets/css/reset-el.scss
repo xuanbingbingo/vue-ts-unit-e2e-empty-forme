@@ -1,0 +1,152 @@
+@mixin left-icon-active {
+  .left-icon {
+    background-color:#3c4652!important;
+    .left-icon-1 {
+      background-color: #2c85d9;
+    }
+    .left-icon-2 {
+      border-left: 1px solid #fff;
+    }
+    .left-icon-3 {
+      border: 1px solid #4EA9ED;
+      background-color: #4EA9ED;
+    }
+  }
+}
+#app{
+  height:100%;
+}
+.nav .notice .el-badge__content.is-fixed {
+  top: 12px;
+  right: 12px;
+}
+// 导航样式重定义
+.nav-menu .el-menu-vertical-custom.el-menu .el-submenu .el-submenu__title{
+  padding-left:20px!important;
+}
+.nav-menu .el-menu-vertical-application.el-menu{
+  border:none;
+}
+.nav-menu .el-menu-vertical-application .el-menu-item{
+  background-color:#33383E!important;
+  padding:0!important;
+  height:40px!important;
+  line-height:40px!important;
+  &:hover{
+    background-color:#3c4652!important;
+  }
+}
+.nav-menu .el-menu-vertical-application .el-submenu__title{
+  height:50px!important;
+  line-height: 50px!important;
+  font-size:16px!important;
+}
+.nav-menu .el-menu-vertical-application .el-submenu__title:hover{
+  background:#232c38!important;
+}
+.nav-menu .el-menu-vertical-application .el-menu-item:hover{
+  color:#fff!important;
+}
+.nav-menu .el-menu-vertical-application .el-menu-item.is-active{
+  color:#fff!important;
+  @include left-icon-active;
+}
+
+.application-add .el-form-item__label{
+  text-align:left!important;
+  font-size:20px;
+}
+.application-add .el-textarea__inner{
+  height:200px;
+}
+.application-add .el-custom-user .el-form-item__label{
+  padding-left: 14px !important;
+}
+// message弹框样式
+.el-message.custom-message{
+  top:80px!important;
+}
+
+//connector的层级
+.el-form-item.custom-form-left{
+  text-align: left;
+}
+
+.text-indent-2{
+  text-indent: 2em;
+}
+.padding-left-2{
+  padding-left:2em;
+}
+.customPadding{
+  p{
+    padding-left:2em;
+  }
+  .padding-left-none{
+    padding-left:0;
+  }
+}
+.textAlignLeft{
+  text-align: left;
+}
+.el-menu-vertical-custom .el-submenu .el-menu-item{
+  min-width:10px!important;
+}
+.el-menu-vertical-custom.el-menu{
+  border-right:none!important;
+}
+.el-menu-vertical-custom .el-submenu__icon-arrow{
+  // right:114px!important;
+  color:#fff;
+}
+.el-menu-vertical-custom.el-menu .el-submenu .el-submenu__title{
+  padding-left:40px!important;
+}
+// 修改表格表头的背景色
+.el-table thead  th{
+  background:rgba(245,245,245,0.99)!important;
+}
+
+// 修改代码编辑弹出框的宽度
+.width80{
+  width:90%!important;
+  margin-top:3vh!important;
+  margin-bottom:3vh!important;
+}
+.width80{
+  .el-dialog__body{
+    padding-top:0px;
+    padding-bottom:10px;
+  }
+}
+
+.inline-input .el-input__inner {
+  height: 32px;
+  line-height: 32px;
+}
+
+.el-custom-input-width {
+  width: 400px;
+}
+.login{
+  .el-button.el-button--primary{
+    width:300px;
+  }
+}
+
+.showBlock{
+  display:block;
+}
+.hiddenBlock{
+  display:none;
+}
+.floatLeft{
+  float: left;
+}
+.history-custom-input.el-select{
+  margin-left:10px;
+  width:150px!important;
+}
+.loadingClass{
+  background-color:rgba(245,245,245,0.5)
+}
